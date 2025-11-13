@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nome": "Ana Silva",
+    "nome": "Guilherme Silva",
     "foto": "https://i.pravatar.cc/150?img=1",
     "cargo": "Desenvolvedora Full Stack",
     "resumo": "Especialista em desenvolvimento de aplicações web escaláveis com foco em performance e UX.",
@@ -449,7 +449,7 @@
   },
   {
     "id": 12,
-    "nome": "Thiago Rodrigues",
+    "nome": "Mariana Rodrigues",
     "foto": "https://i.pravatar.cc/150?img=32",
     "cargo": "Cloud Architect",
     "resumo": "Arquiteto de soluções cloud especializado em AWS e Azure.",
