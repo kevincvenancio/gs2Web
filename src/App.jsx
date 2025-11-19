@@ -20,7 +20,7 @@ function App() {
     setProfissionais(profissionaisData)
     setFilteredProfissionais(profissionaisData)
     
-    // Verificar preferência de dark mode do sistema
+    
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     const savedDarkMode = localStorage.getItem('darkMode')
     if (savedDarkMode !== null) {
@@ -31,7 +31,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    // Aplicar dark mode
+    // aplicar dark mode
     if (darkMode) {
       document.documentElement.classList.add('dark')
     } else {
@@ -41,10 +41,10 @@ function App() {
   }, [darkMode])
 
   useEffect(() => {
-    // Filtrar profissionais
+    // filtrar profissionais
     let filtered = profissionais
 
-    // Busca por nome, cargo ou resumo
+    // busca por nome, cargo ou resumo
     if (searchTerm) {
       const searchLower = searchTerm.toLowerCase()
       filtered = filtered.filter(p => 
@@ -54,17 +54,17 @@ function App() {
       )
     }
 
-    // Filtro por área
+    // filtro por área
     if (filterArea) {
       filtered = filtered.filter(p => p.area === filterArea)
     }
 
-    // Filtro por cidade
+    // filtro por cidade
     if (filterCidade) {
       filtered = filtered.filter(p => p.localizacao.includes(filterCidade))
     }
 
-    // Filtro por tecnologia
+    // filtro por tecnologia
     if (filterTecnologia) {
       filtered = filtered.filter(p => 
         p.habilidadesTecnicas.some(tech => 
