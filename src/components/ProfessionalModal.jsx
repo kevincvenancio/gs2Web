@@ -10,7 +10,7 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
         className="bg-white dark:bg-gray-800 rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
+        {/* header */}
         <div className="relative h-64 bg-gradient-to-br from-blue-500 to-purple-600">
           <button
             onClick={onClose}
@@ -39,15 +39,13 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
           </div>
         </div>
 
-        {/* Content */}
+        {/* content */}
         <div className="p-6 space-y-6">
-          {/* Resumo */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Sobre</h3>
             <p className="text-gray-700 dark:text-gray-300">{profissional.resumo}</p>
           </div>
 
-          {/* Habilidades Técnicas */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Habilidades Técnicas</h3>
             <div className="flex flex-wrap gap-2">
@@ -62,7 +60,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           </div>
 
-          {/* Soft Skills */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Soft Skills</h3>
             <div className="flex flex-wrap gap-2">
@@ -77,7 +74,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           </div>
 
-          {/* Experiências */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Experiências</h3>
             <div className="space-y-4">
@@ -94,7 +90,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           </div>
 
-          {/* Formação */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Formação</h3>
             <div className="space-y-2">
@@ -108,7 +103,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           </div>
 
-          {/* Projetos */}
           {profissional.projetos && profissional.projetos.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Projetos</h3>
@@ -133,7 +127,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           )}
 
-          {/* Certificações */}
           {profissional.certificacoes && profissional.certificacoes.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Certificações</h3>
@@ -145,7 +138,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           )}
 
-          {/* Idiomas */}
           {profissional.idiomas && profissional.idiomas.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Idiomas</h3>
@@ -162,7 +154,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           )}
 
-          {/* Áreas de Interesse */}
           {profissional.areaInteresses && profissional.areaInteresses.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Áreas de Interesse</h3>
@@ -179,7 +170,6 @@ function ProfessionalModal({ profissional, onClose, onRecomendar, onEnviarMensag
             </div>
           )}
 
-          {/* Botões de Ação */}
           <div className="flex gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
             <button
               onClick={onRecomendar}
