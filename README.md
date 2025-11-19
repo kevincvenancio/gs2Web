@@ -19,6 +19,9 @@ Uma Single Page Application (SPA) moderna desenvolvida com React + Vite e Tailwi
 - **Tailwind CSS**: Framework CSS utilitário
 - **HTML5**: Estrutura semântica
 
+## Link Vercel
+- https://gs2-web-ten.vercel.app/
+
 ## 📦 Instalação
 
 1. Clone o repositório ou navegue até a pasta do projeto
