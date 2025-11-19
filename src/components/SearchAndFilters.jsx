@@ -17,7 +17,6 @@ function SearchAndFilters({
       </h2>
       
       <div className="space-y-6">
-        {/* Busca */}
         <div>
           <label className="block text-base font-semibold text-blue-900 dark:text-gray-200 mb-2 tracking-wide">
             Buscar por nome, cargo ou descrição
@@ -31,9 +30,7 @@ function SearchAndFilters({
           />
         </div>
 
-        {/* Filtros */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Filtro por Área */}
           <div>
             <label className="block text-base font-semibold text-blue-900 dark:text-gray-200 mb-2 tracking-wide">
               Área
@@ -50,7 +47,6 @@ function SearchAndFilters({
             </select>
           </div>
 
-          {/* Filtro por Cidade */}
           <div>
             <label className="block text-base font-semibold text-blue-900 dark:text-gray-200 mb-2 tracking-wide">
               Cidade
@@ -67,7 +63,6 @@ function SearchAndFilters({
             </select>
           </div>
 
-          {/* Filtro por Tecnologia */}
           <div>
             <label className="block text-base font-semibold text-blue-900 dark:text-gray-200 mb-2 tracking-wide">
               Tecnologia
@@ -82,7 +77,6 @@ function SearchAndFilters({
           </div>
         </div>
 
-        {/* Botão Limpar Filtros */}
         {(searchTerm || filterArea || filterCidade || filterTecnologia) && (
           <div className="flex justify-end">
             <button
