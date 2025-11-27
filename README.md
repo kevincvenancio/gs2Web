@@ -1,3 +1,8 @@
+Contribuidores 
+
+Guilherme Moura Badia 
+Kevin Carvalho Venancio
+
 # SPA de Profissionais
 
 Uma Single Page Application (SPA) moderna desenvolvida com React + Vite e Tailwind CSS para listagem e visualização de perfis profissionais.
